@@ -55,8 +55,10 @@ def predict():
         origpantHeight, origpantWidth = imgpant.shape[:2]
         face_cascade=cv2.cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-        ret,img=cap.read()
-       
+#        ret,img=cap.read()
+       	t_path="C:/Users/Meghna Singh/Desktop/virtual trial room/Virtual-Trial-Room/test_subject.png"
+        img=cv2.imread(t_path)
+
         height = img.shape[0]
         width = img.shape[1]
         resizewidth = int(width*3/2)
